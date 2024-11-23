@@ -7,8 +7,7 @@ router.get('/', async (req, res) => {
 	body) {
 		if (!error && response.statusCode == 200) {
 			const data = JSON.parse(body);
-			console.log(body);
-			res.render('dog', { title: 'Dog', dogImageMessage: data.message });
+			res.json(data);
 		}
 	});
 })
