@@ -14,6 +14,7 @@ var catRouter = require('./routes/cat');
 var qrcodeRouter = require('./routes/qrcode');
 var dogRouter = require('./routes/dog');
 var yesnoRouter = require('./routes/yesno');
+var notes_from_bRouter = require('./routes/notes_from_b');
 
 
 //expressオブジェクトの生成
@@ -40,6 +41,7 @@ app.use('/cat',catRouter);
 app.use('/dog',dogRouter);
 app.use('/qrcode',qrcodeRouter);
 app.use('/yesno',yesnoRouter);
+app.use('/notes_from_b',notes_from_bRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
